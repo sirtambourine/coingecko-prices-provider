@@ -1,5 +1,6 @@
 import axios from "axios";
 import { getCoingeckoSimpleTokenPriceUri } from "../utils";
+import React from "react";
 
 export const fetchCoingeckoTokenPrice =
   (fetchFunction: any) =>
@@ -37,7 +38,6 @@ export async function getCoingeckoTokenPrices(
   const res = await axios(url);
   const data = await res?.data;
 
-  console.log("data", data);
   try {
     contracts.map((address) => {
       if (data[address.toLowerCase()] === undefined) {

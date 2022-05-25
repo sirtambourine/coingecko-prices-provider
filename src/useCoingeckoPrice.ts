@@ -1,9 +1,9 @@
 import { useState, useContext, useEffect } from "react";
-import { PriceContext } from "./context/PriceContext";
+import { CoingeckoPricesContext } from "./context/CoingeckoPricesContext";
 
 const useCoingeckoPrice = (contract: string) => {
   const [data, setData] = useState({ price: undefined, updated: undefined });
-  const { prices } = useContext(PriceContext);
+  const { prices } = useContext(CoingeckoPricesContext);
 
   useEffect(() => {
     if (prices.prices) {

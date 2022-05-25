@@ -1,7 +1,8 @@
+import React from 'react'
 import { createContext } from "react";
 import { useReducer, useEffect } from "react";
 import { PriceReducer } from "../reducer/PriceReducer";
-import { getCoingeckoTokenPrices } from "../service/coingecko";
+import { getCoingeckoTokenPrices } from "../services/coingecko";
 import { UPDATE_PRICES } from "../types";
 
 interface PriceStreaming {
@@ -41,8 +42,7 @@ export const CoingeckoPricesProvider = ({ cryptoCompareApiKey, children }: any) 
     "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
     "0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32",
     "0xc00e94Cb662C3520282E6f5717214004A7f26888",
-    "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
-    "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
+    "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0"
   ];
 
   const [state, dispatch] = useReducer(PriceReducer, initialState);
