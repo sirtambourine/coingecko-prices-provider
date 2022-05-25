@@ -1,7 +1,35 @@
 {
   "name": "coingecko-prices-provider",
   "version": "0.1.0",
-  "private": true,
+  "description": "provider for coingecko prices",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirtambourine/coingecko-prices-provider.git"
+  },
+  "homepage": "https://github.com/sirtambourine/coingecko-prices-provider#readme",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "keywords": [
+    "react",
+    "crypto",
+    "cyrptocurrency",
+    "coingecko",
+    "prive provider",
+    "realtime prices",
+    "live prices",
+    "crypto price",
+    "crypto tickers",
+    "web3",
+    "ethereum",
+    "blockchain",
+    "ethereum blockchain",
+    "ethereum crypto",
+    "ethereum crypto price"
+  ],
+  "license": "MIT",
+  "author": "Sir Tambourine",
   "dependencies": {
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.31",
@@ -19,10 +47,7 @@
     "/lib"
   ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "tsc",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "tsc"
   },
   "browserslist": {
     "production": [
